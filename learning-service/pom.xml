@@ -9,7 +9,18 @@
         <module>learning-file</module>
         <module>learning-trade</module>
     </modules>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional> <!-- 可选，但建议加上 -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
     <parent>
         <artifactId>learning</artifactId>
         <groupId>cn.linter</groupId>

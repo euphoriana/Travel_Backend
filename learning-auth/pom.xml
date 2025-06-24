@@ -4,23 +4,27 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>learning</artifactId>
         <groupId>cn.linter</groupId>
+        <artifactId>learning</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
     <artifactId>learning-auth</artifactId>
-    <packaging>jar</packaging>
 
     <dependencies>
-        <dependency>
-            <groupId>cn.linter</groupId>
-            <artifactId>learning-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+        <!-- Spring Boot 核心 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!-- Spring Cloud 核心 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -30,19 +34,65 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-loadbalancer</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.github.ben-manes.caffeine</groupId>
-            <artifactId>caffeine</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security.oauth</groupId>
-            <artifactId>spring-security-oauth2</artifactId>
-            <version>${spring-security-oauth2.version}</version>
-        </dependency>
+
+        <!--
+            【核心修正】: 补上解决 JAXB 问题的 OAuth2 依赖配置
+        -->
+        <!-- 1. OAuth2 自动配置适配器 -->
         <dependency>
             <groupId>org.springframework.security.oauth.boot</groupId>
             <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+            <version>2.6.3</version>
+        </dependency>
+        <!-- 2. OAuth2 核心库，并排除其自带的有问题的 JAXB 依赖 -->
+        <dependency>
+            <groupId>org.springframework.security.oauth</groupId>
+            <artifactId>spring-security-oauth2</artifactId>
+            <version>2.5.0.RELEASE</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>javax.xml.bind</groupId>
+                    <artifactId>jaxb-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.xml.bind</groupId>
+                    <artifactId>jaxb-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.xml.bind</groupId>
+                    <artifactId>jaxb-impl</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- 项目内部依赖 -->
+        <dependency>
+            <groupId>cn.linter</groupId>
+            <artifactId>learning-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- 工具和测试依赖 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- 激活父 POM 中管理的插件，用于打包。不需要任何配置和版本。 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

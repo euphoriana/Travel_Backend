@@ -1,0 +1,246 @@
+2025-06-22 09:38:31,753 WARN naming.distro config will be removed, please use core.protocol.distro replace.
+
+2025-06-22 09:38:31,753 WARN Using naming.distro config to replace core.distro config
+
+2025-06-22 09:38:31,920 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2025-06-22 09:38:31,921 INFO listen for service meta change
+
+2025-06-22 09:41:29,123 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2025-06-22 09:41:29,137 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2025-06-22 09:41:29,782 ERROR [HEALTH-CHECK] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(AbstractQueuedSynchronizer.java:1220)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(ReentrantLock.java:335)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:462)
+	at com.alibaba.nacos.naming.healthcheck.TcpSuperSenseProcessor.processTask(TcpSuperSenseProcessor.java:137)
+	at com.alibaba.nacos.naming.healthcheck.TcpSuperSenseProcessor.run(TcpSuperSenseProcessor.java:154)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2025-06-22 09:41:29,782 ERROR [HEALTH-CHECK] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.processTask(TcpHealthCheckProcessor.java:122)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.run(TcpHealthCheckProcessor.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2025-06-22 10:58:15,982 WARN naming.distro config will be removed, please use core.protocol.distro replace.
+
+2025-06-22 10:58:15,982 WARN Using naming.distro config to replace core.distro config
+
+2025-06-22 10:58:16,110 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2025-06-22 10:58:16,110 INFO listen for service meta change
+
+2025-06-22 11:08:26,507 INFO Client connection 192.168.43.228:57187#true connect
+
+2025-06-22 11:08:26,637 INFO Client connection 192.168.19.1:8846#true connect
+
+2025-06-22 11:08:26,637 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=0}, 192.168.19.1:8846#true
+
+2025-06-22 11:19:21,441 INFO Client connection 192.168.43.228:65344#true connect
+
+2025-06-22 11:19:21,493 INFO Client connection 192.168.19.1:8430#true connect
+
+2025-06-22 11:19:21,493 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='file-service', ephemeral=true, revision=0}, 192.168.19.1:8430#true
+
+2025-06-22 12:01:44,790 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='file-service', ephemeral=true, revision=1}, 192.168.19.1:8430#true
+
+2025-06-22 12:01:44,930 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=1}, 192.168.19.1:8846#true
+
+2025-06-22 12:01:54,488 INFO Client connection 192.168.133.203:61771#true connect
+
+2025-06-22 12:01:54,546 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=2}, 192.168.19.1:8846#true
+
+2025-06-22 12:02:13,841 INFO Client connection 192.168.43.228:57187#true disconnect, remove instances and subscribers
+
+2025-06-22 12:02:18,842 INFO Client connection 192.168.19.1:8430#true disconnect, remove instances and subscribers
+
+2025-06-22 12:02:18,842 INFO Client connection 192.168.43.228:65344#true disconnect, remove instances and subscribers
+
+2025-06-22 12:02:48,934 WARN namespace : public, [DEFAULT_GROUP@@file-service] services are automatically cleaned
+
+2025-06-22 14:48:53,921 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=3}, 192.168.19.1:8846#true
+
+2025-06-22 14:49:03,937 INFO Client connection 192.168.43.228:51245#true connect
+
+2025-06-22 14:49:03,996 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=4}, 192.168.19.1:8846#true
+
+2025-06-22 14:49:28,275 INFO Client connection 192.168.133.203:61771#true disconnect, remove instances and subscribers
+
+2025-06-22 15:03:49,288 WARN naming.distro config will be removed, please use core.protocol.distro replace.
+
+2025-06-22 15:03:49,288 WARN Using naming.distro config to replace core.distro config
+
+2025-06-22 15:03:49,417 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2025-06-22 15:03:49,417 INFO listen for service meta change
+
+2025-06-22 15:03:56,836 INFO Client connection 192.168.43.228:51350#true connect
+
+2025-06-22 15:04:26,451 INFO Client connection 192.168.43.228:60556#true connect
+
+2025-06-22 15:04:26,512 INFO Client connection 192.168.19.1:8846#true connect
+
+2025-06-22 15:04:26,513 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=0}, 192.168.19.1:8846#true
+
+2025-06-22 15:04:31,686 INFO Client connection 192.168.43.228:51350#true disconnect, remove instances and subscribers
+
+2025-06-22 15:24:08,770 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=1}, 192.168.19.1:8846#true
+
+2025-06-22 15:24:13,738 INFO Client connection 192.168.43.228:62560#true connect
+
+2025-06-22 15:24:13,792 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=2}, 192.168.19.1:8846#true
+
+2025-06-22 15:24:43,588 INFO Client connection 192.168.43.228:60556#true disconnect, remove instances and subscribers
+
+2025-06-22 15:31:33,181 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=3}, 192.168.19.1:8846#true
+
+2025-06-22 15:32:04,277 INFO Client connection 192.168.19.1:8846#true disconnect, remove instances and subscribers
+
+2025-06-22 15:32:09,290 INFO Client connection 192.168.43.228:62560#true disconnect, remove instances and subscribers
+
+2025-06-22 15:32:27,158 INFO Client connection 192.168.43.228:60425#true connect
+
+2025-06-22 15:32:59,376 INFO Client connection 192.168.43.228:60425#true disconnect, remove instances and subscribers
+
+2025-06-22 15:33:22,565 WARN namespace : public, [DEFAULT_GROUP@@auth-service] services are automatically cleaned
+
+2025-06-22 15:33:55,375 INFO Client connection 192.168.43.228:53828#true connect
+
+2025-06-22 15:34:29,517 INFO Client connection 192.168.43.228:53828#true disconnect, remove instances and subscribers
+
+2025-06-22 15:35:11,388 INFO Client connection 192.168.43.228:64133#true connect
+
+2025-06-22 15:35:44,630 INFO Client connection 192.168.43.228:64133#true disconnect, remove instances and subscribers
+
+2025-06-22 15:35:47,352 INFO Client connection 192.168.43.228:64179#true connect
+
+2025-06-22 15:36:01,464 INFO Client connection 192.168.43.228:56474#true connect
+
+2025-06-22 15:36:19,673 INFO Client connection 192.168.43.228:64179#true disconnect, remove instances and subscribers
+
+2025-06-22 15:36:34,696 INFO Client connection 192.168.43.228:56474#true disconnect, remove instances and subscribers
+
+2025-06-22 15:39:14,408 INFO Client connection 192.168.43.228:64767#true connect
+
+2025-06-22 15:39:28,127 INFO Client connection 192.168.43.228:61730#true connect
+
+2025-06-22 15:39:50,017 INFO Client connection 192.168.43.228:64767#true disconnect, remove instances and subscribers
+
+2025-06-22 15:40:00,028 INFO Client connection 192.168.43.228:61730#true disconnect, remove instances and subscribers
+
+2025-06-22 15:41:29,425 INFO Client connection 192.168.43.228:60206#true connect
+
+2025-06-22 15:41:43,125 INFO Client connection 192.168.43.228:63265#true connect
+
+2025-06-22 15:42:05,218 INFO Client connection 192.168.43.228:60206#true disconnect, remove instances and subscribers
+
+2025-06-22 15:42:15,245 INFO Client connection 192.168.43.228:63265#true disconnect, remove instances and subscribers
+
+2025-06-22 15:45:25,670 INFO Client connection 192.168.43.228:58440#true connect
+
+2025-06-22 15:45:25,717 INFO Client connection 192.168.19.1:8846#true connect
+
+2025-06-22 15:45:25,718 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=0}, 192.168.19.1:8846#true
+
+2025-06-22 15:45:34,745 INFO Client connection 192.168.43.228:58441#true connect
+
+2025-06-22 15:45:35,112 INFO Client connection 192.168.19.1:8080#true connect
+
+2025-06-22 15:45:35,112 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway', ephemeral=true, revision=0}, 192.168.19.1:8080#true
+
+2025-06-22 15:47:27,039 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=1}, 192.168.19.1:8846#true
+
+2025-06-22 15:47:33,162 INFO Client connection 192.168.43.228:61002#true connect
+
+2025-06-22 15:47:33,220 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=2}, 192.168.19.1:8846#true
+
+2025-06-22 15:47:34,783 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway', ephemeral=true, revision=1}, 192.168.19.1:8080#true
+
+2025-06-22 15:48:00,783 INFO Client connection 192.168.43.228:58440#true disconnect, remove instances and subscribers
+
+2025-06-22 15:48:05,791 INFO Client connection 192.168.19.1:8080#true disconnect, remove instances and subscribers
+
+2025-06-22 15:48:10,791 INFO Client connection 192.168.43.228:58441#true disconnect, remove instances and subscribers
+
+2025-06-22 15:49:22,660 WARN namespace : public, [DEFAULT_GROUP@@gateway] services are automatically cleaned
+
+2025-06-22 15:54:16,452 INFO Client connection 192.168.43.228:59984#true connect
+
+2025-06-22 15:54:16,822 INFO Client connection 192.168.19.1:8080#true connect
+
+2025-06-22 15:54:16,822 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway', ephemeral=true, revision=0}, 192.168.19.1:8080#true
+
+2025-06-22 16:01:20,936 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=3}, 192.168.19.1:8846#true
+
+2025-06-22 16:01:25,086 INFO Client connection 192.168.43.228:58969#true connect
+
+2025-06-22 16:01:25,137 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=4}, 192.168.19.1:8846#true
+
+2025-06-22 16:01:26,853 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway', ephemeral=true, revision=1}, 192.168.19.1:8080#true
+
+2025-06-22 16:01:29,732 INFO Client connection 192.168.43.228:58970#true connect
+
+2025-06-22 16:01:30,110 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway', ephemeral=true, revision=2}, 192.168.19.1:8080#true
+
+2025-06-22 16:01:47,079 INFO Client connection 192.168.43.228:61002#true disconnect, remove instances and subscribers
+
+2025-06-22 16:01:52,082 INFO Client connection 192.168.43.228:59984#true disconnect, remove instances and subscribers
+
+2025-06-22 16:06:21,087 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=5}, 192.168.19.1:8846#true
+
+2025-06-22 16:06:24,381 INFO Client connection 192.168.43.228:65509#true connect
+
+2025-06-22 16:06:24,434 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=6}, 192.168.19.1:8846#true
+
+2025-06-22 16:06:32,316 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway', ephemeral=true, revision=3}, 192.168.19.1:8080#true
+
+2025-06-22 16:06:35,197 INFO Client connection 192.168.43.228:56474#true connect
+
+2025-06-22 16:06:35,572 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway', ephemeral=true, revision=4}, 192.168.19.1:8080#true
+
+2025-06-22 16:06:47,556 INFO Client connection 192.168.43.228:58969#true disconnect, remove instances and subscribers
+
+2025-06-22 16:07:02,586 INFO Client connection 192.168.43.228:58970#true disconnect, remove instances and subscribers
+
+2025-06-22 16:08:17,883 INFO Client connection 192.168.43.228:54043#true connect
+
+2025-06-22 16:08:17,940 INFO Client connection 192.168.19.1:8430#true connect
+
+2025-06-22 16:08:17,940 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='file-service', ephemeral=true, revision=0}, 192.168.19.1:8430#true
+
+2025-06-22 16:11:08,246 INFO Client connection 192.168.43.228:63956#true connect
+
+2025-06-22 16:11:08,314 INFO Client connection 192.168.19.1:8410#true connect
+
+2025-06-22 16:11:08,314 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='user-service', ephemeral=true, revision=0}, 192.168.19.1:8410#true
+
+2025-06-22 16:12:41,540 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='auth-service', ephemeral=true, revision=7}, 192.168.19.1:8846#true
+
+2025-06-22 16:13:13,187 INFO Client connection 192.168.19.1:8846#true disconnect, remove instances and subscribers
+
+2025-06-22 16:13:18,189 INFO Client connection 192.168.43.228:65509#true disconnect, remove instances and subscribers
+
+2025-06-22 16:13:41,593 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='file-service', ephemeral=true, revision=1}, 192.168.19.1:8430#true
+
+2025-06-22 16:13:51,641 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway', ephemeral=true, revision=5}, 192.168.19.1:8080#true
+
+2025-06-22 16:14:05,646 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='user-service', ephemeral=true, revision=1}, 192.168.19.1:8410#true
+
+2025-06-22 16:14:13,308 INFO Client connection 192.168.19.1:8430#true disconnect, remove instances and subscribers
+
+2025-06-22 16:14:13,308 INFO Client connection 192.168.43.228:54043#true disconnect, remove instances and subscribers
+
