@@ -3,13 +3,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <modules>
-        <module>learning-auth</module>
-        <module>learning-common</module>
-        <module>learning-gateway</module>
-        <module>learning-service</module>
-    </modules>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -23,11 +16,17 @@
     <packaging>pom</packaging>
     <name>Learning</name>
 
+    <modules>
+        <module>learning-auth</module>
+        <module>learning-common</module>
+        <module>learning-gateway</module>
+        <module>learning-service</module>
+    </modules>
+
     <properties>
         <java.version>1.8</java.version>
-        <spring-cloud.version>2021.0.0</spring-cloud.version>
-        <spring-cloud-alibaba.version>2021.1</spring-cloud-alibaba.version>
-        <spring-security-oauth2.version>2.5.0.RELEASE</spring-security-oauth2.version>
+        <spring-cloud.version>2021.0.1</spring-cloud.version>
+        <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version>
         <mybatis.version>2.2.2</mybatis.version>
         <pagehelper.version>1.4.1</pagehelper.version>
         <minio.version>8.3.5</minio.version>
@@ -35,24 +34,9 @@
         <alipay.easysdk.version>2.2.0</alipay.easysdk.version>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
     <dependencyManagement>
         <dependencies>
+            <!-- Spring Cloud 版本管理 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -60,6 +44,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- Spring Cloud Alibaba 版本管理 -->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
@@ -67,6 +52,17 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.cloud</groupId>-->
+<!--                <artifactId>spring-cloud-starter-loadbalancer</artifactId>-->
+<!--                <exclusions>-->
+<!--                    <exclusion><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-web</artifactId></exclusion>-->
+<!--                </exclusions>-->
+<!--            </dependency>-->
+
+            <!-- 【修正一】: 下面不再需要 nacos-discovery 的声明了，BOM会处理 -->
+
+            <!-- 其他第三方库的版本管理 -->
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -81,12 +77,22 @@
     </dependencyManagement>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <!-- 【修正二】: 删除版本号，让 spring-boot-starter-parent 统一管理 -->
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>repackage</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 
 </project>

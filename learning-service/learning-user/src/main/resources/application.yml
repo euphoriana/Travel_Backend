@@ -6,7 +6,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost/learning?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
-    password: root
+    password: 123456
   jackson:
     default-property-inclusion: non_null
     date-format: yyyy-MM-dd HH:mm

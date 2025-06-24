@@ -1,0 +1,368 @@
+2025-06-22 09:38:19,628 INFO Starting Nacos v2.0.1 on LAPTOP-67NCPKHA with PID 8688 (D:\code\IdeaProject\Learning\nacos\target\nacos-server.jar started by 24331 in D:\code\IdeaProject\Learning\nacos)
+
+2025-06-22 09:38:19,629 INFO The following profiles are active: standalone
+
+2025-06-22 09:38:26,842 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@54f5f647' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2025-06-22 09:38:26,848 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2025-06-22 09:38:27,587 INFO Tomcat initialized with port(s): 8848 (http)
+
+2025-06-22 09:38:27,630 INFO Starting service [Tomcat]
+
+2025-06-22 09:38:27,630 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
+
+2025-06-22 09:38:28,196 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2025-06-22 09:38:28,232 INFO Initializing Spring embedded WebApplicationContext
+
+2025-06-22 09:38:28,232 INFO Root WebApplicationContext: initialization completed in 8518 ms
+
+2025-06-22 09:38:29,353 INFO HikariPool-1 - Starting...
+
+2025-06-22 09:38:29,361 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+
+2025-06-22 09:38:30,255 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+
+2025-06-22 09:38:30,270 INFO HikariPool-1 - Start completed.
+
+2025-06-22 09:38:31,677 INFO Nacos-related cluster resource initialization
+
+2025-06-22 09:38:31,692 INFO The cluster resource is initialized
+
+2025-06-22 09:38:32,275 INFO Reflections took 62 ms to scan 1 urls, producing 5 keys and 10 values 
+
+2025-06-22 09:38:32,336 INFO Reflections took 6 ms to scan 1 urls, producing 4 keys and 21 values 
+
+2025-06-22 09:38:32,354 INFO Reflections took 5 ms to scan 1 urls, producing 5 keys and 19 values 
+
+2025-06-22 09:38:32,374 INFO Reflections took 2 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2025-06-22 09:38:33,061 INFO Reflections took 32 ms to scan 2 urls, producing 3 keys and 6 values 
+
+2025-06-22 09:38:33,092 INFO Reflections took 28 ms to scan 2 urls, producing 4 keys and 9 values 
+
+2025-06-22 09:38:33,138 INFO Reflections took 44 ms to scan 2 urls, producing 3 keys and 10 values 
+
+2025-06-22 09:38:33,144 INFO Reflections took 3 ms to scan 1 urls, producing 2 keys and 2 values 
+
+2025-06-22 09:38:33,185 INFO Reflections took 30 ms to scan 2 urls, producing 1 keys and 5 values 
+
+2025-06-22 09:38:33,213 INFO Reflections took 25 ms to scan 2 urls, producing 1 keys and 7 values 
+
+2025-06-22 09:38:33,253 INFO Reflections took 37 ms to scan 2 urls, producing 2 keys and 8 values 
+
+2025-06-22 09:38:33,259 INFO Reflections took 3 ms to scan 1 urls, producing 1 keys and 1 values 
+
+2025-06-22 09:38:36,233 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2025-06-22 09:38:36,388 INFO Adding welcome page: class path resource [static/index.html]
+
+2025-06-22 09:38:37,320 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2025-06-22 09:38:37,372 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@383864d5, org.springframework.security.web.context.SecurityContextPersistenceFilter@6631cb64, org.springframework.security.web.header.HeaderWriterFilter@55a88417, org.springframework.security.web.csrf.CsrfFilter@7fd8c559, org.springframework.security.web.authentication.logout.LogoutFilter@7e2c64, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@481e91b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3cbf1ba4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3dd818e8, org.springframework.security.web.session.SessionManagementFilter@8a2a6a, org.springframework.security.web.access.ExceptionTranslationFilter@8f2098e]
+
+2025-06-22 09:38:37,736 INFO Initializing ExecutorService 'taskScheduler'
+
+2025-06-22 09:38:37,756 INFO Exposing 16 endpoint(s) beneath base path '/actuator'
+
+2025-06-22 09:38:37,934 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2025-06-22 09:38:37,940 INFO Started Nacos in 19.61 seconds (JVM running for 20.238)
+
+2025-06-22 09:38:37,941 INFO Nacos started successfully in stand alone mode. use embedded storage
+
+2025-06-22 09:41:29,122 WARN [HttpClientBeanHolder] Start destroying common HttpClient
+
+2025-06-22 09:41:29,122 WARN [ConfigServer-HttpClientManager] Start destroying NacosRestTemplate
+
+2025-06-22 09:41:29,125 WARN [WatchFileCenter] start close
+
+2025-06-22 09:41:29,125 WARN [NotifyCenter] Start destroying Publisher
+
+2025-06-22 09:41:29,125 WARN [WatchFileCenter] start to shutdown this watcher which is watch : D:\code\IdeaProject\Learning\nacos\data\tps
+
+2025-06-22 09:41:29,125 WARN [ThreadPoolManager] Start destroying ThreadPool
+
+2025-06-22 09:41:29,130 WARN [WatchFileCenter] start to shutdown this watcher which is watch : D:\code\IdeaProject\Learning\nacos\conf
+
+2025-06-22 09:41:29,128 WARN [NotifyCenter] Destruction of the end
+
+2025-06-22 09:41:29,133 WARN [WatchFileCenter] start to shutdown this watcher which is watch : D:\code\IdeaProject\Learning\nacos\data\loader
+
+2025-06-22 09:41:29,133 WARN [WatchFileCenter] already closed
+
+2025-06-22 09:41:29,135 INFO Shutting down ExecutorService 'taskScheduler'
+
+2025-06-22 09:41:29,135 WARN [HttpClientBeanHolder] Destruction of the end
+
+2025-06-22 09:41:29,136 WARN [ConfigServer-HttpClientManager] Destruction of the end
+
+2025-06-22 09:41:29,138 INFO Shutting down ExecutorService 'applicationTaskExecutor'
+
+2025-06-22 09:41:31,410 WARN [ThreadPoolManager] Destruction of the end
+
+2025-06-22 10:58:04,899 INFO Starting Nacos v2.0.1 on LAPTOP-67NCPKHA with PID 55508 (D:\code\IdeaProject\Learning\nacos\target\nacos-server.jar started by 24331 in D:\code\IdeaProject\Learning\nacos)
+
+2025-06-22 10:58:04,899 INFO The following profiles are active: standalone
+
+2025-06-22 10:58:12,542 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6105f8a3' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2025-06-22 10:58:12,547 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2025-06-22 10:58:13,140 INFO Tomcat initialized with port(s): 8848 (http)
+
+2025-06-22 10:58:13,167 INFO Starting service [Tomcat]
+
+2025-06-22 10:58:13,167 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
+
+2025-06-22 10:58:13,535 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2025-06-22 10:58:13,566 INFO Initializing Spring embedded WebApplicationContext
+
+2025-06-22 10:58:13,567 INFO Root WebApplicationContext: initialization completed in 8587 ms
+
+2025-06-22 10:58:14,338 INFO HikariPool-1 - Starting...
+
+2025-06-22 10:58:14,345 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+
+2025-06-22 10:58:14,846 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+
+2025-06-22 10:58:14,853 INFO HikariPool-1 - Start completed.
+
+2025-06-22 10:58:15,931 INFO Nacos-related cluster resource initialization
+
+2025-06-22 10:58:15,944 INFO The cluster resource is initialized
+
+2025-06-22 10:58:16,411 INFO Reflections took 37 ms to scan 1 urls, producing 5 keys and 10 values 
+
+2025-06-22 10:58:16,440 INFO Reflections took 5 ms to scan 1 urls, producing 4 keys and 21 values 
+
+2025-06-22 10:58:16,449 INFO Reflections took 2 ms to scan 1 urls, producing 5 keys and 19 values 
+
+2025-06-22 10:58:16,459 INFO Reflections took 1 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2025-06-22 10:58:16,987 INFO Reflections took 30 ms to scan 2 urls, producing 3 keys and 6 values 
+
+2025-06-22 10:58:17,013 INFO Reflections took 23 ms to scan 2 urls, producing 4 keys and 9 values 
+
+2025-06-22 10:58:17,038 INFO Reflections took 23 ms to scan 2 urls, producing 3 keys and 10 values 
+
+2025-06-22 10:58:17,042 INFO Reflections took 2 ms to scan 1 urls, producing 2 keys and 2 values 
+
+2025-06-22 10:58:17,073 INFO Reflections took 25 ms to scan 2 urls, producing 1 keys and 5 values 
+
+2025-06-22 10:58:17,100 INFO Reflections took 25 ms to scan 2 urls, producing 1 keys and 7 values 
+
+2025-06-22 10:58:17,126 INFO Reflections took 25 ms to scan 2 urls, producing 2 keys and 8 values 
+
+2025-06-22 10:58:17,130 INFO Reflections took 1 ms to scan 1 urls, producing 1 keys and 1 values 
+
+2025-06-22 10:58:19,164 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2025-06-22 10:58:19,317 INFO Adding welcome page: class path resource [static/index.html]
+
+2025-06-22 10:58:20,097 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2025-06-22 10:58:20,138 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@fb6097b, org.springframework.security.web.context.SecurityContextPersistenceFilter@332820f4, org.springframework.security.web.header.HeaderWriterFilter@790a251b, org.springframework.security.web.csrf.CsrfFilter@199bc830, org.springframework.security.web.authentication.logout.LogoutFilter@84487f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72456279, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d192aef, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2dfe5525, org.springframework.security.web.session.SessionManagementFilter@524a2ffb, org.springframework.security.web.access.ExceptionTranslationFilter@27b45ea]
+
+2025-06-22 10:58:20,356 INFO Initializing ExecutorService 'taskScheduler'
+
+2025-06-22 10:58:20,372 INFO Exposing 16 endpoint(s) beneath base path '/actuator'
+
+2025-06-22 10:58:20,488 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2025-06-22 10:58:20,490 INFO Started Nacos in 16.856 seconds (JVM running for 17.506)
+
+2025-06-22 10:58:20,491 INFO Nacos started successfully in stand alone mode. use embedded storage
+
+2025-06-22 11:04:03,259 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2025-06-22 11:04:03,259 INFO Initializing Servlet 'dispatcherServlet'
+
+2025-06-22 11:04:03,276 INFO Completed initialization in 17 ms
+
+2025-06-22 11:08:16,773 WARN clearConfigHistory start
+
+2025-06-22 11:08:16,804 INFO [capacityManagement] start correct usage
+
+2025-06-22 11:08:16,817 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 11:18:16,789 WARN clearConfigHistory start
+
+2025-06-22 11:18:16,821 INFO [capacityManagement] start correct usage
+
+2025-06-22 11:18:16,821 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 11:28:16,794 WARN clearConfigHistory start
+
+2025-06-22 11:28:16,824 INFO [capacityManagement] start correct usage
+
+2025-06-22 11:28:16,824 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 11:38:16,800 WARN clearConfigHistory start
+
+2025-06-22 11:38:16,831 INFO [capacityManagement] start correct usage
+
+2025-06-22 11:38:16,832 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 11:48:16,815 WARN clearConfigHistory start
+
+2025-06-22 11:48:16,846 INFO [capacityManagement] start correct usage
+
+2025-06-22 11:48:16,847 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 11:58:16,831 WARN clearConfigHistory start
+
+2025-06-22 11:58:16,862 INFO [capacityManagement] start correct usage
+
+2025-06-22 11:58:16,862 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 12:08:16,846 WARN clearConfigHistory start
+
+2025-06-22 12:08:16,877 INFO [capacityManagement] start correct usage
+
+2025-06-22 12:08:16,877 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 14:34:34,174 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h17m17s858ms314µs800ns).
+
+2025-06-22 14:34:38,626 WARN clearConfigHistory start
+
+2025-06-22 14:35:04,745 INFO [capacityManagement] start correct usage
+
+2025-06-22 14:35:04,745 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 14:44:38,639 WARN clearConfigHistory start
+
+2025-06-22 14:45:04,755 INFO [capacityManagement] start correct usage
+
+2025-06-22 14:45:04,755 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 14:54:38,643 WARN clearConfigHistory start
+
+2025-06-22 14:55:04,758 INFO [capacityManagement] start correct usage
+
+2025-06-22 14:55:04,759 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 15:03:38,421 INFO Starting Nacos v2.0.1 on LAPTOP-67NCPKHA with PID 101964 (D:\code\IdeaProject\Learning\nacos\target\nacos-server.jar started by 24331 in D:\code\IdeaProject\Learning\nacos)
+
+2025-06-22 15:03:38,421 INFO The following profiles are active: standalone
+
+2025-06-22 15:03:45,694 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2237bada' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2025-06-22 15:03:45,700 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2025-06-22 15:03:46,254 INFO Tomcat initialized with port(s): 8848 (http)
+
+2025-06-22 15:03:46,280 INFO Starting service [Tomcat]
+
+2025-06-22 15:03:46,280 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
+
+2025-06-22 15:03:46,640 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2025-06-22 15:03:46,676 INFO Initializing Spring embedded WebApplicationContext
+
+2025-06-22 15:03:46,676 INFO Root WebApplicationContext: initialization completed in 8167 ms
+
+2025-06-22 15:03:47,512 INFO HikariPool-1 - Starting...
+
+2025-06-22 15:03:47,519 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+
+2025-06-22 15:03:47,943 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+
+2025-06-22 15:03:47,951 INFO HikariPool-1 - Start completed.
+
+2025-06-22 15:03:49,237 INFO Nacos-related cluster resource initialization
+
+2025-06-22 15:03:49,249 INFO The cluster resource is initialized
+
+2025-06-22 15:03:49,719 INFO Reflections took 39 ms to scan 1 urls, producing 5 keys and 10 values 
+
+2025-06-22 15:03:49,747 INFO Reflections took 3 ms to scan 1 urls, producing 4 keys and 21 values 
+
+2025-06-22 15:03:49,757 INFO Reflections took 3 ms to scan 1 urls, producing 5 keys and 19 values 
+
+2025-06-22 15:03:49,769 INFO Reflections took 1 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2025-06-22 15:03:50,452 INFO Reflections took 46 ms to scan 2 urls, producing 3 keys and 6 values 
+
+2025-06-22 15:03:50,492 INFO Reflections took 36 ms to scan 2 urls, producing 4 keys and 9 values 
+
+2025-06-22 15:03:50,534 INFO Reflections took 40 ms to scan 2 urls, producing 3 keys and 10 values 
+
+2025-06-22 15:03:50,540 INFO Reflections took 3 ms to scan 1 urls, producing 2 keys and 2 values 
+
+2025-06-22 15:03:50,584 INFO Reflections took 36 ms to scan 2 urls, producing 1 keys and 5 values 
+
+2025-06-22 15:03:50,620 INFO Reflections took 33 ms to scan 2 urls, producing 1 keys and 7 values 
+
+2025-06-22 15:03:50,650 INFO Reflections took 27 ms to scan 2 urls, producing 2 keys and 8 values 
+
+2025-06-22 15:03:50,654 INFO Reflections took 2 ms to scan 1 urls, producing 1 keys and 1 values 
+
+2025-06-22 15:03:53,217 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2025-06-22 15:03:53,411 INFO Adding welcome page: class path resource [static/index.html]
+
+2025-06-22 15:03:54,346 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2025-06-22 15:03:54,397 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a9b9909, org.springframework.security.web.context.SecurityContextPersistenceFilter@53a9fcfd, org.springframework.security.web.header.HeaderWriterFilter@2f61d591, org.springframework.security.web.csrf.CsrfFilter@69228e85, org.springframework.security.web.authentication.logout.LogoutFilter@2dfe5525, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d192aef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bfc14b9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55d9b8f0, org.springframework.security.web.session.SessionManagementFilter@7173ae5b, org.springframework.security.web.access.ExceptionTranslationFilter@5853495b]
+
+2025-06-22 15:03:54,666 INFO Initializing ExecutorService 'taskScheduler'
+
+2025-06-22 15:03:54,682 INFO Exposing 16 endpoint(s) beneath base path '/actuator'
+
+2025-06-22 15:03:54,790 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2025-06-22 15:03:54,794 INFO Started Nacos in 17.667 seconds (JVM running for 18.248)
+
+2025-06-22 15:03:54,794 INFO Nacos started successfully in stand alone mode. use embedded storage
+
+2025-06-22 15:03:56,757 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2025-06-22 15:03:56,757 INFO Initializing Servlet 'dispatcherServlet'
+
+2025-06-22 15:03:56,766 INFO Completed initialization in 9 ms
+
+2025-06-22 15:13:50,126 WARN clearConfigHistory start
+
+2025-06-22 15:13:50,158 INFO [capacityManagement] start correct usage
+
+2025-06-22 15:13:50,168 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 15:23:50,151 WARN clearConfigHistory start
+
+2025-06-22 15:23:50,182 INFO [capacityManagement] start correct usage
+
+2025-06-22 15:23:50,183 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 15:33:50,168 WARN clearConfigHistory start
+
+2025-06-22 15:33:50,183 INFO [capacityManagement] start correct usage
+
+2025-06-22 15:33:50,184 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 15:43:50,177 WARN clearConfigHistory start
+
+2025-06-22 15:43:50,193 INFO [capacityManagement] start correct usage
+
+2025-06-22 15:43:50,193 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 15:53:50,192 WARN clearConfigHistory start
+
+2025-06-22 15:53:50,207 INFO [capacityManagement] start correct usage
+
+2025-06-22 15:53:50,208 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 16:03:50,196 WARN clearConfigHistory start
+
+2025-06-22 16:03:50,212 INFO [capacityManagement] start correct usage
+
+2025-06-22 16:03:50,212 INFO [capacityManagement] end correct usage, cost: 0s
+
+2025-06-22 16:13:50,201 WARN clearConfigHistory start
+
+2025-06-22 16:13:50,217 INFO [capacityManagement] start correct usage
+
+2025-06-22 16:13:50,218 INFO [capacityManagement] end correct usage, cost: 0s
+

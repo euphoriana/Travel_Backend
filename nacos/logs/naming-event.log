@@ -1,0 +1,6 @@
+2025-06-22 09:41:31,082 ERROR [UPDATE-DOMAIN] Exception while taking item from LinkedBlockingDeque.
+
+2025-06-22 14:34:36,271 INFO {POS} {IP-DISABLED} valid: 192.168.19.1:8846@DEFAULT@auth-service, region: unknown, msg: client last beat: 1750574076270
+
+2025-06-22 14:34:39,350 INFO service: DEFAULT_GROUP@@auth-service {POS} {IP-ENABLED} valid: 192.168.19.1:8846@DEFAULT, region: unknown, msg: client beat ok
+
