@@ -51,6 +51,7 @@ public class WebFluxSecurityConfig {
                 .pathMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                 .pathMatchers("/api/oauth/token").permitAll()
                 .pathMatchers(HttpMethod.POST, "/api/oauth/user").permitAll()
+                .pathMatchers(HttpMethod.POST, "/api/oauth/user/sendEmailCode").permitAll()
                 .pathMatchers(HttpMethod.GET, "/api/oauth/user/**").authenticated()
                 .anyExchange().permitAll()
                 .and().exceptionHandling()

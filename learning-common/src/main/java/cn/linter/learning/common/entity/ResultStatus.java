@@ -22,8 +22,9 @@ public enum ResultStatus {
     USER_NOT_FOUND("3000", "用户不存在"),
     USERNAME_EXISTS("3001", "用户名已存在"),
     COURSE_NOT_BUY("4001", "课程未购买"),
-    PAYMENT_CREATE_FAILURE("5001", "支付创建失败");
-
+    PAYMENT_CREATE_FAILURE("5001", "支付创建失败"),
+    EMAIL_SEND_FAILED("3002", "验证码发送失败"),
+    EMAIL_CODE_INVALID("3003", "验证码错误");
     /**
      * 状态码
      */

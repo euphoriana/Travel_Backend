@@ -1,5 +1,7 @@
 package cn.linter.learning.auth.client;
 
+import cn.linter.learning.auth.entity.EmailRequest;
+import cn.linter.learning.auth.entity.RegisterWrapper;
 import cn.linter.learning.auth.entity.User;
 import cn.linter.learning.common.entity.Result;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -29,10 +31,15 @@ public interface UserClient {
     /**
      * 新增用户
      *
-     * @param user 用户实例
+     * @param registerWrapper 用户实例
      * @return 用户
      */
     @PostMapping("users")
-    Result<?> createUser(@RequestBody User user);
+    Result<?> createUser(@RequestBody RegisterWrapper registerWrapper);
+    /**
+     * 发送邮箱验证码
+     */
+    @PostMapping("users/sendEmailCode")
+    Result<?> sendEmailCode(@RequestBody EmailRequest request);
 
 }
