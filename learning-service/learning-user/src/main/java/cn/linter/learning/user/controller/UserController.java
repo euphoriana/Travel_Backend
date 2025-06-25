@@ -16,6 +16,8 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * 用户控制器
  *
@@ -80,6 +82,7 @@ public class UserController {
         user.setEmailAddress(email);
         user.setUsername(registerWrapper.getUsername());
         user.setPassword(registerWrapper.getPassword());
+        redisTemplate.opsForValue().set("user:email:" + registerWrapper.getUsername(), email);
 
         // 创建用户
         User createdUser = userService.create(user);

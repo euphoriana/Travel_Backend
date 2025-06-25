@@ -15,6 +15,21 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
+  redis:
+    host: localhost
+    port: 6379
+    # password: your_password  # 如果 Redis 设置了密码，请取消注释
+    timeout: 5000
+  mail:
+    host: smtp.qq.com
+    port: 465
+    username: 1563086482@qq.com        # 发件人邮箱
+    password: rejgfudanunmjbai         # 邮箱生成的 SMTP 授权码
+    protocol: smtp
+    default-encoding: UTF-8
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.ssl.enable: true
 mybatis:
   mapper-locations: classpath:mapper/*.xml
 alipay:

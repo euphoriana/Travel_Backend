@@ -7,9 +7,11 @@ import cn.linter.learning.trade.client.CourseClient;
 import cn.linter.learning.trade.entity.Course;
 import cn.linter.learning.trade.entity.Order;
 import cn.linter.learning.trade.service.OrderService;
+import cn.linter.learning.trade.service.EmailService;
 import com.alipay.easysdk.factory.Factory;
 import com.alipay.easysdk.payment.page.models.AlipayTradePagePayResponse;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -35,10 +37,14 @@ public class PaymentController {
 
     private final OrderService orderService;
     private final CourseClient courseClient;
+    private final EmailService emailService;
+    private final StringRedisTemplate redisTemplate;
 
-    public PaymentController(OrderService orderService, CourseClient courseClient) {
+    public PaymentController(OrderService orderService, CourseClient courseClient,EmailService emailService,StringRedisTemplate redisTemplate) {
         this.orderService = orderService;
         this.courseClient = courseClient;
+        this.emailService = emailService;
+        this.redisTemplate = redisTemplate;
     }
 
     @RequestMapping
@@ -66,14 +72,26 @@ public class PaymentController {
         course.setId(order.getProductId());
         course.setRegistered(true);
         courseClient.updateCourse(course.getId(), order.getUsername());
+
+        //发送成功预订的邮件
+        String username = order.getUsername();
+        String emailKey = "user:email:" + username;
+        String email = redisTemplate.opsForValue().get(emailKey);
+        // 判断 Redis 中是否拿到 email，拿不到就不发邮件，或可降级处理
+        if (email != null && !email.isEmpty()) {
+            emailService.sendPaymentSuccessNotice(email, order.getProductName());
+        } else {
+            // 可选：记录日志或降级查询用户服务
+            System.out.println("警告：Redis 中未找到用户名 " + username + " 对应的邮箱，邮件未发送。");
+        }
+
         response.setContentType("text/html; charset=utf8");
         try (PrintWriter out = response.getWriter()) {
-            out.print("支付成功，3秒之后跳转回课程页面" +
+            out.print("支付成功，3秒之后跳转回首页" +
                     "<script>setTimeout(()=>window.location.href=\"http://localhost:3000/courses/" +
                     order.getProductId() + "\",3000)</script>");
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
 }
