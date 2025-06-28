@@ -32,3 +32,4 @@ spring:
       mail.smtp.ssl.enable: true
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

@@ -82,7 +82,18 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean delete(String username) {
-        return userDao.delete(username) > 0;
+        try {
+            System.out.println("Attempting to delete user with username: " + username);
+            int rowsAffected = userDao.delete(username);
+            if (rowsAffected > 0) {
+                return true; // 删除成功
+            } else {
+                // 如果没有删除记录，可以抛出异常或返回失败状态
+                throw new BusinessException(ResultStatus.USER_NOT_FOUND); // 用户不存在或未找到
+            }
+        } catch (Exception e) {
+            // 捕获异常并返回失败状态
+            throw new BusinessException(ResultStatus.DATABASE_ERROR); // 数据库错误
+        }
     }
-
 }

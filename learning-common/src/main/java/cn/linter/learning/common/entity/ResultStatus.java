@@ -24,7 +24,8 @@ public enum ResultStatus {
     COURSE_NOT_BUY("4001", "课程未购买"),
     PAYMENT_CREATE_FAILURE("5001", "支付创建失败"),
     EMAIL_SEND_FAILED("3002", "验证码发送失败"),
-    EMAIL_CODE_INVALID("3003", "验证码错误");
+    EMAIL_CODE_INVALID("3003", "验证码错误"),
+    DATABASE_ERROR("3004", "数据库错误");
     /**
      * 状态码
      */
